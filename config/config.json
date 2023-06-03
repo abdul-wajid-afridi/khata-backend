@@ -1,12 +1,12 @@
 {
   "development": {
     "username": "root",
-    "password": "8554city",
-    "database": "akanto",
-    "host": "localhost",
+    "password": "2BwZaiTkKS0HkXSXdH3u",
+    "database": "railway",
+    "host": "containers-us-west-167.railway.app",
     "address": "0.0.0.0",
     "dialect": "mysql",
-    "port": 3336
+    "port": 5696
   },
   "test": {
     "username": "root",

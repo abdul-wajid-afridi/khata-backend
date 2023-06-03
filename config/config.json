@@ -3,7 +3,8 @@
     "username": "root",
     "password": "8554city",
     "database": "akanto",
-    "host": "0.0.0.0",
+    "host": "localhost",
+    "address": "0.0.0.0",
     "dialect": "mysql",
     "port": 3336
   },

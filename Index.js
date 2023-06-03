@@ -38,6 +38,7 @@ app.use("/shop", require("./routes/AdminRoutes"));
 app.use("/shop", require("./routes/customerKhataRoutes"));
 app.use("/shop", require("./routes/purchaseRoutes"));
 app.use("/shop", require("./routes/PaymentsRoutes"));
+console.log("testing");
 
 db.sequelize.sync().then(() => {
   app.listen(port, console.log(`app runs on ${port}`));

@@ -11,7 +11,7 @@ const isImage = (req, file, CallB) => {
   if (file.mimetype.startsWith("image")) {
     CallB(null, true);
   } else {
-    console.log("only images are allowed");
+    console.log("only images are allowed ...");
   }
 };
 const upload = multer({

@@ -17,6 +17,14 @@ app.use(
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.get("/", (req, res) => {
+  res.json({
+    data: "my data",
+    message: "testting my api",
+  });
+});
+
 app.post("/get", (req, res) => {
   res.json({
     data: "my data",

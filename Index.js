@@ -9,7 +9,7 @@ const port = process.env.PORT || 7000;
 // all Middlewares
 app.use(
   cors({
-    origin: "https://sarhad-tradders.netlify.app/",
+    origin: ["http://localhost:3000", "https://sarhad-tradders.netlify.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })

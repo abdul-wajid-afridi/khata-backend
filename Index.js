@@ -31,6 +31,7 @@ app.post("/get", (req, res) => {
     datas: req.body,
   });
 });
+
 // Routes
 app.use(express.static("upload"));
 app.use("/shop", require("./routes/AdminRoutes"));

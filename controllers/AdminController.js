@@ -38,7 +38,7 @@ const adminLogin = async (req, res) => {
   const { name, password } = req.body;
   try {
     const user = await admins.findOne({ where: { name: name } });
-    if (!user) res.status(401).json({ error: "user doesnot exists" });
+    if (!user) return res.status(401).json({ error: "user doesnot exists" });
 
     await bcrypt.compare(password, user.password).then((match) => {
       if (!match) res.status(401).json({ error: "no Password matched" });

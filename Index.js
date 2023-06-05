@@ -27,11 +27,10 @@ app.get("/", (req, res) => {
 
 app.post("/get", (req, res) => {
   res.json({
-    data: "my data",
+    data: "my data2",
     datas: req.body,
   });
 });
-
 // Routes
 app.use(express.static("upload"));
 app.use("/shop", require("./routes/AdminRoutes"));
